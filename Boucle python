@@ -1,0 +1,34 @@
+#/usr/bin/env python3 
+# -*- coding: utf-8 -*- 
+# 
+#  pythonBoucleFonctionLineaire.py 
+#   
+#  Ecrire un programme qui calcule la valeur d'une fonction lineaire  
+#	pour les abscisses de valeurs 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. 
+# 
+#  Copyright 2015 Rhamni Yassine <yassine_rhamni@hotmail.fr> 
+#    
+
+#specifications 
+#parametre :  
+#	aucun 
+#retour :  
+#	a un nombre reel  
+#	b un nombre reel  
+def entree(): 
+#Les entrees du programme 
+ 	print ("Calcul d'un nombre multiplier jusqu'a 15.\n") 
+ 	a = float(input("Indiquez la valeur de a :"))  
+ 	return a 
+def multiplication (a,x):
+	y= a*x
+	return y
+
+def pourImpression(a):
+	for x in range(0,16):
+		print ("\nx = "+str(x)+" : "+"y = "+str(multiplication(a,x))+"\n")
+
+print ("    ---> Debut du programme.\n")
+coefA=entree() 
+pourImpression(coefA) 
+print ("\n   ---> Fin du programme.") 
